@@ -44,7 +44,7 @@ def generate_image(
             draw = ImageDraw.Draw(img)
             image_width = img.width
             
-            black = (90, 90, 1898)
+            black = (90, 90, 90)
             total = amount
             totalWithExtra = total + 17
             
@@ -52,7 +52,7 @@ def generate_image(
             dayMonthYear = now.strftime("%d/%m/%y")
             
             draw_text(draw, number, 400, 850, 55, FONT1, black)
-            draw_text(draw, number, 400, 950, 55, FONT2, black)
+            draw_text(draw, number, 400, 1050, 55, FONT2, black)
             draw_text(draw, transaction, image_width - 384, 1430, 60, FONT1, black, "right")
             draw_text(draw, f"{total} +17.39", 175, 1880, 50, FONT2, black)
             draw_text(draw, str(totalWithExtra), 170, 1768, 50, FONT1, black)
