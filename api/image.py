@@ -97,8 +97,8 @@ def generate_image(
             dayMonthYear = now.strftime("%d/%m/%y")
             header_time = f"{time_main} {dayMonthYear}"
             
-            draw_text(draw, number, 245, 750, 40, FONT1, black)
-            draw_text(draw, number, 245, 835, 40, FONT2, black)
+            draw_text(draw, number, 400, 850, 55, FONT1, black)
+            draw_text(draw, number, 410, 950, 45, FONT2, black)
             draw_text(draw, transaction, image_width - 365, 1175, 40, FONT1, black, "right")
             draw_text(draw, header_time, 780, 250, 35, FONT1, black)
             draw_text(draw, f"{total} + 5.0", 80, 1530, 40, FONT2, black)
