@@ -44,7 +44,7 @@ def generate_image(
             draw = ImageDraw.Draw(img)
             image_width = img.width
             
-            black = (90, 90, 90)
+            black = (90, 90, 1898)
             total = amount
             totalWithExtra = total + 17
             
