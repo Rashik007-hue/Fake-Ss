@@ -118,8 +118,8 @@ def generate_image(
             draw_text(draw, header_time, 820, 250, 40, FONT1, black)
             
             # টোটাল এবং সাব-টোটাল
-            draw_text(draw, str(totalWithExtra), 80, 1400, 50, FONT1, black)
-            draw_text(draw, f"{total} + 5.0", 80, 1450, 50, FONT2, black)
+            draw_text(draw, str(totalWithExtra), 80, 1420, 50, FONT1, black)
+            draw_text(draw, f"{total} + 5.0", 80, 1470, 50, FONT2, black)
             
             # স্ট্যাটাস বারের টাইম
             draw_text(draw, time_top, 100, 77, 37, FONT2, white)
