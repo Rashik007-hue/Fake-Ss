@@ -81,11 +81,11 @@ def generate_image(
             
             # এখানে bold=True যোগ করা হলো
             draw_text(draw, number, 1110, 999, 55, FONT2, black, "right", bold=True)
-            draw_text(draw, transaction, 1790, 1280, 50, FONT1, grey, "right")
-            draw_text(draw, str(amount), 1630, 1385, 50, FONT1, grey, "right")
-            draw_text(draw, str(charge), 1630, 1505, 50, FONT1, grey, "right")
-            draw_text(draw, str(total), 1630, 1620, 50, FONT1, grey, "right")
-            draw_text(draw, time_main, 1790, 1740, 50, FONT1, grey, "right")
+            draw_text(draw, transaction, 1790, 1280, 55, FONT1, grey, "right")
+            draw_text(draw, str(amount), 1630, 1385, 55, FONT1, grey, "right")
+            draw_text(draw, str(charge), 1630, 1505, 55, FONT1, grey, "right")
+            draw_text(draw, str(total), 1630, 1620, 55, FONT1, grey, "right")
+            draw_text(draw, time_main, 1790, 1740, 55, FONT1, grey, "right")
             draw_text(draw, timeeee, 370, 105, 47, FONT1, white, "right")
 
         else: # sendmoney
