@@ -80,7 +80,7 @@ def generate_image(
             timeeee = now.strftime("%I:%M %p").lstrip('0')
             
             # আগের মতো grey কালার এবং bold বাদ দেওয়া হলো
-            draw_text(draw, number, 1110, 1200, 65, FONT2, grey, "right")
+            draw_text(draw, number, 1120, 1100, 65, FONT2, grey, "right")
             draw_text(draw, transaction, 1790, 1280, 50, FONT1, grey, "right")
             draw_text(draw, str(amount), 1630, 1385, 50, FONT1, grey, "right")
             draw_text(draw, str(charge), 1630, 1505, 50, FONT1, grey, "right")
