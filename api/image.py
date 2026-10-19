@@ -56,8 +56,8 @@ def generate_image(
             draw_text(draw, transaction, image_width - 384, 1430, 60, FONT1, black, "right")
             draw_text(draw, f"{total} +17.39", 175, 1880, 50, FONT2, black)
             draw_text(draw, str(totalWithExtra), 170, 1768, 50, FONT1, black)
-            draw_text(draw, time_main, 135, 1421, 50, FONT1, black)
-            draw_text(draw, dayMonthYear, 439, 1420, 50, FONT1, black)
+            draw_text(draw, time_main, 135, 1421, 60, FONT1, black)
+            draw_text(draw, dayMonthYear, 350, 1420, 50, FONT1, black)
             draw_text(draw, time_main, 50, 109, 47, FONT2, black)
 
         elif type == "nagad":
