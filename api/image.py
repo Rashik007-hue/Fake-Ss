@@ -11,14 +11,19 @@ BASE_DIR = os.path.dirname(__file__)
 FONT1 = os.path.join(BASE_DIR, "roboto.ttf")
 FONT2 = os.path.join(BASE_DIR, "roboto2.ttf")
 
-def draw_text(draw, text, x, y, size, font_path, color, align="left"):
+# draw_text ফাংশনে bold সাপোর্ট যোগ করা হলো
+def draw_text(draw, text, x, y, size, font_path, color, align="left", bold=False):
     font = ImageFont.truetype(font_path, size)
     anchor = "ls" # left-baseline (PHP এর মতো)
     if align == "right":
         anchor = "rs" # right-baseline
     
     try:
-        draw.text((x, y), text, font=font, fill=color, anchor=anchor)
+        # bold=True হলে stroke_width দিয়ে লেখা মোটা করা হবে
+        if bold:
+            draw.text((x, y), text, font=font, fill=color, anchor=anchor, stroke_width=1, stroke_fill=color)
+        else:
+            draw.text((x, y), text, font=font, fill=color, anchor=anchor)
     except Exception:
         if align == "right":
             bbox = draw.textbbox((0, 0), text, font=font)
@@ -67,13 +72,15 @@ def generate_image(
             
             grey = (128, 128, 128)
             white = (255, 255, 255)
+            black = (0, 0, 0) # কালো রঙ ডিফাইন করা হলো
             charge = 5
             total = amount + charge
             
             time_main = now.strftime("%d %B %Y, %I:%M %p").lstrip('0')
             timeeee = now.strftime("%I:%M %p").lstrip('0')
             
-            draw_text(draw, number, 1110, 999, 55, FONT2, black, "right")
+            # এখানে bold=True যোগ করা হলো
+            draw_text(draw, number, 1110, 999, 55, FONT2, black, "right", bold=True)
             draw_text(draw, transaction, 1790, 1280, 50, FONT1, grey, "right")
             draw_text(draw, str(amount), 1630, 1385, 50, FONT1, grey, "right")
             draw_text(draw, str(charge), 1630, 1505, 50, FONT1, grey, "right")
