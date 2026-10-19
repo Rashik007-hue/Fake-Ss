@@ -115,7 +115,7 @@ def generate_image(
             draw_text(draw, dayMonthYear, 320, 1168, 45, FONT1, black)
             
             # উপরের সাদা পিলের ভেতরের টেক্সট
-            draw_text(draw, header_time, 750, 320, 40, FONT1, black)
+            draw_text(draw, header_time, 650, 300, 40, FONT1, black)
             
             # টোটাল এবং সাব-টোটাল
             draw_text(draw, str(totalWithExtra), 80, 1400, 45, FONT1, black)
