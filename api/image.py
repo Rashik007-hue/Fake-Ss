@@ -115,11 +115,11 @@ def generate_image(
             draw_text(draw, dayMonthYear, 320, 1168, 45, FONT1, black)
             
             # উপরের সাদা পিলের ভেতরের টেক্সট
-            draw_text(draw, header_time, 800, 120, 35, FONT1, black)
+            draw_text(draw, header_time, 999, 120, 35, FONT1, black)
             
             # টোটাল এবং সাব-টোটাল
-            draw_text(draw, str(totalWithExtra), 80, 1400, 40, FONT1, black)
-            draw_text(draw, f"{total} + 5.0", 80, 1450, 40, FONT2, black)
+            draw_text(draw, str(totalWithExtra), 80, 1400, 45, FONT1, black)
+            draw_text(draw, f"{total} + 5.0", 80, 1450, 45, FONT2, black)
             
             # স্ট্যাটাস বারের টাইম
             draw_text(draw, time_top, 100, 77, 37, FONT2, white)
