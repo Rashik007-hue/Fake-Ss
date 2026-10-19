@@ -107,7 +107,7 @@ def generate_image(
             # 🔴 Send Money এর পজিশন ফিক্স করা হলো 🔴
             # নাম্বার
             draw_text(draw, number, 250, 750, 55, FONT1, black)
-            draw_text(draw, number, 410, 840, 45, FONT2, black)
+            draw_text(draw, number, 260, 840, 45, FONT2, black)
             
             # ট্রানজেকশন আইডি, টাইম এবং ডেট
             draw_text(draw, transaction, image_width - 365, 1120, 40, FONT1, black, "right")
