@@ -80,13 +80,13 @@ def generate_image(
             timeeee = now.strftime("%I:%M %p").lstrip('0')
             
             # আগের মতো grey কালার এবং bold বাদ দেওয়া হলো
-            draw_text(draw, number, 1120, 1100, 65, FONT2, grey, "right")
-            draw_text(draw, transaction, 1790, 1280, 50, FONT1, grey, "right")
-            draw_text(draw, str(amount), 1630, 1385, 50, FONT1, grey, "right")
-            draw_text(draw, str(charge), 1630, 1505, 50, FONT1, grey, "right")
-            draw_text(draw, str(total), 1630, 1620, 50, FONT1, grey, "right")
-            draw_text(draw, time_main, 1790, 1740, 50, FONT1, grey, "right")
-            draw_text(draw, timeeee, 370, 105, 47, FONT1, white, "right")
+            draw_text(draw, number, 1130, 1100, 70, FONT2, grey, "right")
+            draw_text(draw, transaction, 1790, 1280, 70, FONT1, grey, "right")
+            draw_text(draw, str(amount), 1630, 1385, 70, FONT1, grey, "right")
+            draw_text(draw, str(charge), 1630, 1505, 70, FONT1, grey, "right")
+            draw_text(draw, str(total), 1630, 1620, 70, FONT1, grey, "right")
+            draw_text(draw, time_main, 1790, 1740, 70, FONT1, grey, "right")
+            draw_text(draw, timeeee, 370, 105, 70, FONT1, white, "right")
 
         else: # sendmoney
             img_path = os.path.join(BASE_DIR, "sendmoney_bg.jpg")
