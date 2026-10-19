@@ -73,7 +73,7 @@ def generate_image(
             time_main = now.strftime("%d %B %Y, %I:%M %p").lstrip('0')
             timeeee = now.strftime("%I:%M %p").lstrip('0')
             
-            draw_text(draw, number, 1099, 999, 55, FONT1, grey, "right")
+            draw_text(draw, number, 1110, 999, 55, FONT1, grey, "right")
             draw_text(draw, transaction, 1790, 1280, 50, FONT1, grey, "right")
             draw_text(draw, str(amount), 1630, 1385, 50, FONT1, grey, "right")
             draw_text(draw, str(charge), 1630, 1505, 50, FONT1, grey, "right")
