@@ -81,11 +81,11 @@ def generate_image(
             
             # এখানে bold=True যোগ করা হলো
             draw_text(draw, number, 1110, 999, 55, FONT2, black, "right", bold=True)
-            draw_text(draw, transaction, 1790, 1280, 55, FONT1, grey, "right")
-            draw_text(draw, str(amount), 1630, 1385, 55, FONT1, grey, "right")
-            draw_text(draw, str(charge), 1630, 1505, 55, FONT1, grey, "right")
-            draw_text(draw, str(total), 1630, 1620, 55, FONT1, grey, "right")
-            draw_text(draw, time_main, 1790, 1740, 55, FONT1, grey, "right")
+            draw_text(draw, transaction, 1790, 1280, 50, FONT1, grey, "right")
+            draw_text(draw, str(amount), 1630, 1385, 50, FONT1, grey, "right")
+            draw_text(draw, str(charge), 1630, 1505, 50, FONT1, grey, "right")
+            draw_text(draw, str(total), 1630, 1620, 50, FONT1, grey, "right")
+            draw_text(draw, time_main, 1790, 1740, 50, FONT1, grey, "right")
             draw_text(draw, timeeee, 370, 105, 47, FONT1, white, "right")
 
         else: # sendmoney
@@ -104,14 +104,24 @@ def generate_image(
             dayMonthYear = now.strftime("%d/%m/%y")
             header_time = f"{time_main} {dayMonthYear}"
             
-            draw_text(draw, number, 400, 850, 55, FONT1, black)
-            draw_text(draw, number, 410, 950, 45, FONT2, black)
-            draw_text(draw, transaction, image_width - 365, 1175, 40, FONT1, black, "right")
-            draw_text(draw, header_time, 780, 250, 35, FONT1, black)
-            draw_text(draw, f"{total} + 5.0", 80, 1530, 40, FONT2, black)
-            draw_text(draw, str(totalWithExtra), 80, 1450, 40, FONT1, black)
-            draw_text(draw, time_main, 80, 1175, 40, FONT1, black)
-            draw_text(draw, dayMonthYear, 330, 1175, 40, FONT1, black)
+            # 🔴 Send Money এর পজিশন ফিক্স করা হলো 🔴
+            # নাম্বার
+            draw_text(draw, number, 400, 780, 55, FONT1, black)
+            draw_text(draw, number, 410, 840, 45, FONT2, black)
+            
+            # ট্রানজেকশন আইডি, টাইম এবং ডেট
+            draw_text(draw, transaction, image_width - 365, 1120, 40, FONT1, black, "right")
+            draw_text(draw, time_main, 80, 1120, 40, FONT1, black)
+            draw_text(draw, dayMonthYear, 330, 1120, 40, FONT1, black)
+            
+            # উপরের সাদা পিলের ভেতরের টেক্সট
+            draw_text(draw, header_time, 800, 120, 35, FONT1, black)
+            
+            # টোটাল এবং সাব-টোটাল
+            draw_text(draw, str(totalWithExtra), 80, 1400, 40, FONT1, black)
+            draw_text(draw, f"{total} + 5.0", 80, 1450, 40, FONT2, black)
+            
+            # স্ট্যাটাস বারের টাইম
             draw_text(draw, time_top, 100, 77, 37, FONT2, white)
 
         img_io = io.BytesIO()
