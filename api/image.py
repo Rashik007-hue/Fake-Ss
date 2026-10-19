@@ -111,8 +111,8 @@ def generate_image(
             
             # ট্রানজেকশন আইডি, টাইম এবং ডেট
             draw_text(draw, transaction, image_width - 365, 1168, 50, FONT1, black, "right")
-            draw_text(draw, time_main, 80, 1130, 45, FONT1, black)
-            draw_text(draw, dayMonthYear, 330, 1130, 45, FONT1, black)
+            draw_text(draw, time_main, 80, 1168, 45, FONT1, black)
+            draw_text(draw, dayMonthYear, 330, 1168, 45, FONT1, black)
             
             # উপরের সাদা পিলের ভেতরের টেক্সট
             draw_text(draw, header_time, 800, 120, 35, FONT1, black)
