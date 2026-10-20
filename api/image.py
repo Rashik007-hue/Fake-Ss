@@ -86,7 +86,7 @@ def generate_image(
             draw_text(draw, str(charge), 1630, 1505, 70, FONT1, grey, "right")
             draw_text(draw, str(total), 1630, 1620, 70, FONT1, grey, "right")
             draw_text(draw, time_main, 1790, 1740, 70, FONT1, grey, "right")
-            draw_text(draw, timeeee, 370, 105, 70, FONT1, grey, "right")
+            draw_text(draw, timeeee, 370, 105, 70, FONT2, white, "right")
 
         else: # sendmoney
             img_path = os.path.join(BASE_DIR, "sendmoney_bg.jpg")
